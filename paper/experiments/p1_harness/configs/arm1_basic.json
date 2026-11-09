@@ -1,0 +1,9 @@
+{
+  "name": "arm1_basic",
+  "description": "Basic Gemma coding agent: read/edit/submit only. No test execution of any kind.",
+  "tools": ["read_file", "replace_in_file", "submit"],
+  "auto_test": false,
+  "graph": false,
+  "submit_gate": false,
+  "gate_max_rejections": 0
+}

@@ -1,0 +1,28 @@
+# MOCK self-test log — regenerated 2026-11-07 during the P1 file-transfer task, on the RELOCATED layout (paper/experiments/p1_harness).
+# No earlier log file existed; the original P1 run was only shown in the session. This is NOT a Gemma result: scripted mock policies, no model.
+# QuixBugs pinned commit 4257f44b0ff1181dedaedee6a447e133219fcebf (clone not included in this package).
+PASS  [oracle] all rows flagged is_mock
+PASS  [oracle] resolves every task in every arm (grader + edit path work)
+PASS  [oracle] AST equals reference
+PASS  [oracle] arm1 performs ZERO test runs
+PASS  [oracle] arm2 test runs = initial + after-edit (>=2)
+PASS  [oracle] no gate rejections when fix is correct
+PASS  [noop] all rows flagged is_mock
+PASS  [noop] unresolved everywhere (grader does not hallucinate passes)
+PASS  [noop] arm1/arm2 have no submit gate
+PASS  [noop] arm3 gate rejects 3x then accepts as-is
+PASS  [noop] submitted but not resolved
+PASS  [garbage] all rows flagged is_mock
+PASS  [garbage] format_abort after 3 format errors
+PASS  [graphprobe] all rows flagged is_mock
+PASS  [graphprobe] graph tool unavailable in arm1
+PASS  [graphprobe] graph tool works in arm3
+PASS  [runtests] all rows flagged is_mock
+PASS  [runtests] run_tests unavailable in arm1
+PASS  [runtests] arm2b run_tests tool executes tests on demand
+PASS  workspace contains no reference solution
+PASS  baseline quixbugs/find_in_sorted: 2/7 failing matches manifest
+PASS  baseline quixbugs/flatten: 6/7 failing matches manifest
+PASS  baseline quixbugs/get_factors: 10/11 failing matches manifest
+
+SELFTEST PASSED

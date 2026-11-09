@@ -1,0 +1,9 @@
+{
+  "name": "arm3_graph_test_validated",
+  "description": "Graph-guided, test-validated agent: arm2 + AST code-graph overview/suspects + get_code_neighbors/get_code_subgraph tools + submit gate (submit rejected while tests fail, up to 3 rejections).",
+  "tools": ["read_file", "replace_in_file", "get_code_neighbors", "get_code_subgraph", "submit"],
+  "auto_test": true,
+  "graph": true,
+  "submit_gate": true,
+  "gate_max_rejections": 3
+}

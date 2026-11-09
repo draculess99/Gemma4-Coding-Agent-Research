@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"tool\":\"submit\",\"args\":{\"tool\":\"read_file\",\"args\":{\"path\":\"flatten.py\"}}}"
+      }
+    }
+  ],
+  "created": 1794091786,
+  "model": "gemma-4-e2b-it-qat-q4_0",
+  "system_fingerprint": "b12192-9f0e5098a",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 23,
+    "prompt_tokens": 55,
+    "total_tokens": 78,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-wKEaUexQNHW4l86ItGpcWNcOprnfyJdt",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 55,
+    "prompt_ms": 331.81,
+    "prompt_per_token_ms": 6.032909090909091,
+    "prompt_per_second": 165.75751182905879,
+    "predicted_n": 23,
+    "predicted_ms": 1448.978,
+    "predicted_per_token_ms": 65.86263636363637,
+    "predicted_per_second": 15.183115271591424
+  },
+  "_elapsed_s": 1.8
+}

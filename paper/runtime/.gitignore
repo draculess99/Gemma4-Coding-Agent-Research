@@ -1,0 +1,17 @@
+# paper/runtime = local runtime area. Model weights (GGUF), the llama.cpp binaries and the download archive
+# are NEVER published. Only small provenance files are allowed through (explicit allow-list below).
+*
+!.gitignore
+!analyze_p2c.py
+!logs/
+!logs/first_inference.json
+!logs/first_inference_reasoning_auto.json
+!logs/first_inference_reasoning_off.json
+!logs/freeze_time_utc.txt
+!logs/main_seed1_stdout.log
+!logs/pilot_stdout.log
+!logs/server.err.log
+!logs/server_p2c.err.log
+!logs/server_reasoning_auto.log
+!p1_originals/
+!p1_originals/common.json.P1_original

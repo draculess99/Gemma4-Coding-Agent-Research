@@ -1,0 +1,5 @@
+4 planned runs, 0 already done, 4 to run
+[1/4] quixbugs/find_in_sorted            arm1_basic                     seed=1 resolved=False end=submitted turns=7 wall=26.88s  eta~1min
+[2/4] quixbugs/find_in_sorted            arm2_test_guided               seed=1 resolved=True end=submitted turns=6 wall=27.17s  eta~1min
+[3/4] quixbugs/flatten                   arm1_basic                     seed=1 resolved=False end=max_turns turns=10 wall=40.22s  eta~1min
+[4/4] quixbugs/flatten                   arm2_test_guided               seed=1 resolved=True end=submitted turns=6 wall=22.99s  eta~0min

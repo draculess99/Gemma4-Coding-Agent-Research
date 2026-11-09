@@ -1,0 +1,9 @@
+{
+  "name": "arm2_test_guided",
+  "description": "Test-guided agent: arm1 tools + deterministic harness-triggered test feedback (initial run + after every applied edit). Model cannot skip or alter the test run. Submit accepted without gate.",
+  "tools": ["read_file", "replace_in_file", "submit"],
+  "auto_test": true,
+  "graph": false,
+  "submit_gate": false,
+  "gate_max_rejections": 0
+}

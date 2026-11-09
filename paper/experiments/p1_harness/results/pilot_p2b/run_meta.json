@@ -1,0 +1,19 @@
+{
+  "model_id": "gemma-4-e2b-it-qat-q4_0",
+  "quant": "q4_0-gguf",
+  "gguf_sha256": "fa401b55b07ee70a54c6dae3903c783a6e65064312529ea57175cb5f8dec6634",
+  "backend": "llama.cpp llama-server",
+  "base_url": "http://127.0.0.1:8080",
+  "arms": [
+    "arm1_basic",
+    "arm2_test_guided"
+  ],
+  "seeds": [
+    1
+  ],
+  "harness_version": "0.1.0-p1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "manifest_pinned_commit": "4257f44b0ff1181dedaedee6a447e133219fcebf"
+}

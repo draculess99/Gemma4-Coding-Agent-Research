@@ -1,0 +1,718 @@
+{
+  "benchmark": "QuixBugs (Python)",
+  "repo": "https://github.com/jkoppel/QuixBugs",
+  "pinned_commit": "4257f44b0ff1181dedaedee6a447e133219fcebf",
+  "selection": {
+    "rule": "seeded random sample from measured-eligible set",
+    "seed": 20261107,
+    "n_requested": 12,
+    "per_run_timeout_s": 20,
+    "n_scanned": 31,
+    "n_eligible": 28,
+    "excluded_graph_based": [
+      "breadth_first_search",
+      "depth_first_search",
+      "detect_cycle",
+      "minimum_spanning_tree",
+      "node",
+      "reverse_linked_list",
+      "shortest_path_length",
+      "shortest_path_lengths",
+      "shortest_paths",
+      "topological_ordering"
+    ]
+  },
+  "tasks": [
+    {
+      "task_id": "quixbugs/find_in_sorted",
+      "program": "python_programs/find_in_sorted.py",
+      "reference_program": "correct_python_programs/find_in_sorted.py",
+      "test_file": "python_testcases/test_find_in_sorted.py",
+      "testcases_json": "json_testcases/find_in_sorted.json",
+      "n_tests": 7,
+      "n_failing_on_buggy": 2,
+      "sha256_buggy": "b640b4bcb1b2c0f7875de8f13df191f4e61ddf7e6fbdcfc42d477ec60885d3c7",
+      "sha256_reference": "cce13769543e2972d66ea61c9d1f1751836c719abf336be8f50f2702d19477ea",
+      "sha256_test": "a943c5c1df1e87360308b23341a651da9cfb31b1f1e2954cdca75c2cf4b6ba54",
+      "measured_seconds_buggy": 0.27,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/flatten",
+      "program": "python_programs/flatten.py",
+      "reference_program": "correct_python_programs/flatten.py",
+      "test_file": "python_testcases/test_flatten.py",
+      "testcases_json": "json_testcases/flatten.json",
+      "n_tests": 7,
+      "n_failing_on_buggy": 6,
+      "sha256_buggy": "5023275fe603f1ebade0027073c3d116274d405069ea350076f220f10ff451e2",
+      "sha256_reference": "9a81d65b8147aa84be75b3345b1ce25d2577335d955e963e10bbef19f986618d",
+      "sha256_test": "8751773222d9310f75ef92e2111298a12e24389cb03aa62b905bcd6ae55f8ee5",
+      "measured_seconds_buggy": 0.26,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/get_factors",
+      "program": "python_programs/get_factors.py",
+      "reference_program": "correct_python_programs/get_factors.py",
+      "test_file": "python_testcases/test_get_factors.py",
+      "testcases_json": "json_testcases/get_factors.json",
+      "n_tests": 11,
+      "n_failing_on_buggy": 10,
+      "sha256_buggy": "7eff7ef2adbb266142cf20e8fa64b05b16ec7e1536a20fa10f036091b1d3290d",
+      "sha256_reference": "a2cd419152aa9262e76614bd7fc4834329cb72263c9b9e91afa4037570c2f99f",
+      "sha256_test": "158d474cce9c5f8dff5e05749648f5e41f47b709a03e1d09f4d05828f65c16f6",
+      "measured_seconds_buggy": 0.27,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/is_valid_parenthesization",
+      "program": "python_programs/is_valid_parenthesization.py",
+      "reference_program": "correct_python_programs/is_valid_parenthesization.py",
+      "test_file": "python_testcases/test_is_valid_parenthesization.py",
+      "testcases_json": "json_testcases/is_valid_parenthesization.json",
+      "n_tests": 3,
+      "n_failing_on_buggy": 1,
+      "sha256_buggy": "2340cddfce49b055a5a7a70c3341351bf130702512278bafaed5d5b345d0ba60",
+      "sha256_reference": "77d7131ce9cadd9876621835bbf18f8299ee52882a1860593409260e41cbb559",
+      "sha256_test": "484b2e67707900e6ef0cff1df83ef441d39fcc3f56afdd9180ff1363fc7d1f76",
+      "measured_seconds_buggy": 0.26,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/kheapsort",
+      "program": "python_programs/kheapsort.py",
+      "reference_program": "correct_python_programs/kheapsort.py",
+      "test_file": "python_testcases/test_kheapsort.py",
+      "testcases_json": "json_testcases/kheapsort.json",
+      "n_tests": 4,
+      "n_failing_on_buggy": 3,
+      "sha256_buggy": "0cabf3d462d941ec01f261f2d794d960ab8ba497c42140cedbc3c872f772cea8",
+      "sha256_reference": "f97bce3d8b0a390c56b826df364c1e2d836b1997a416c3e729b75a61a7640cc7",
+      "sha256_test": "7751ea3a7611406695c84ed254eddc2afdc17eb3e5962bb9a494b3a307953d7a",
+      "measured_seconds_buggy": 0.27,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/kth",
+      "program": "python_programs/kth.py",
+      "reference_program": "correct_python_programs/kth.py",
+      "test_file": "python_testcases/test_kth.py",
+      "testcases_json": "json_testcases/kth.json",
+      "n_tests": 7,
+      "n_failing_on_buggy": 4,
+      "sha256_buggy": "505b7d8079de35173a8371dc40e6064d12f597441e1e7c49b782ed3892c37e7b",
+      "sha256_reference": "1a744253b219bf9fee54fbe5f612ac3c6d186cd38f442b57c41736d102524252",
+      "sha256_test": "89c57596f6deaf8564c0bf076f41c3a293af694ba45c0c8b764a7913fe492e70",
+      "measured_seconds_buggy": 0.28,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/lis",
+      "program": "python_programs/lis.py",
+      "reference_program": "correct_python_programs/lis.py",
+      "test_file": "python_testcases/test_lis.py",
+      "testcases_json": "json_testcases/lis.json",
+      "n_tests": 12,
+      "n_failing_on_buggy": 4,
+      "sha256_buggy": "fe9e751f62674299be95f5026c30c778ec331eb449caaa9a13f6b2908e44a016",
+      "sha256_reference": "f2f14efdb6b419591d565882734ce05c40cdd3b203b45b5727d2838338063a61",
+      "sha256_test": "69763e61b7426521ca6adb5072d2a10527061838534765ab367ea6508bea6ca9",
+      "measured_seconds_buggy": 0.27,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/max_sublist_sum",
+      "program": "python_programs/max_sublist_sum.py",
+      "reference_program": "correct_python_programs/max_sublist_sum.py",
+      "test_file": "python_testcases/test_max_sublist_sum.py",
+      "testcases_json": "json_testcases/max_sublist_sum.json",
+      "n_tests": 6,
+      "n_failing_on_buggy": 4,
+      "sha256_buggy": "aab26d9f3984f177adcff110fe72de97e54c5f85ad476c38e49c949a873d85b5",
+      "sha256_reference": "2f2b119d49fbbe641707020b6e7cbb637affeffe9ae3ca653cccd5a3bee8d798",
+      "sha256_test": "a93255549d80e5ae3ac046905c538d8168b02a833ba296188088b93cf2338525",
+      "measured_seconds_buggy": 0.26,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/pascal",
+      "program": "python_programs/pascal.py",
+      "reference_program": "correct_python_programs/pascal.py",
+      "test_file": "python_testcases/test_pascal.py",
+      "testcases_json": "json_testcases/pascal.json",
+      "n_tests": 5,
+      "n_failing_on_buggy": 4,
+      "sha256_buggy": "4445ef075a5f987d005bba5587c58f4697a90675be09171af2ca4009f64824a1",
+      "sha256_reference": "96b7da947feab99eb7e273c6d1d0e7f1692c04b3f0d9654a1a4253ce57dfcaa8",
+      "sha256_test": "5f671a8e6b49f24c0d927be9f1d6b1e1ef6a33e04a5bab174278098dc7f7d15d",
+      "measured_seconds_buggy": 0.27,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/possible_change",
+      "program": "python_programs/possible_change.py",
+      "reference_program": "correct_python_programs/possible_change.py",
+      "test_file": "python_testcases/test_possible_change.py",
+      "testcases_json": "json_testcases/possible_change.json",
+      "n_tests": 10,
+      "n_failing_on_buggy": 9,
+      "sha256_buggy": "e21854dbb1a8f299bab639e71797a14989ab6bd6b700665a2056c48a70154917",
+      "sha256_reference": "195f5cdc05e838b4c14553090b95e297c75401a6ce778b2738e7e9f47ec18cd0",
+      "sha256_test": "655305d59309352913a710d9bdde631191c83c80a76e78df36d58c7c5c0a964b",
+      "measured_seconds_buggy": 0.46,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/powerset",
+      "program": "python_programs/powerset.py",
+      "reference_program": "correct_python_programs/powerset.py",
+      "test_file": "python_testcases/test_powerset.py",
+      "testcases_json": "json_testcases/powerset.json",
+      "n_tests": 5,
+      "n_failing_on_buggy": 4,
+      "sha256_buggy": "3e3deb045ed61fbe82725cd7e7b0fb4d00f411f87f0f91358109ec0204c61ae9",
+      "sha256_reference": "b53f71a04fec20cbd20c5f0edd64ec1c49796b693677d46b3e7e02b5e3aaf46e",
+      "sha256_test": "9b0b816ba26a0a14fc8387946a2c1f08a85cb7c4e5d0c52c29e9fd640ae89d4e",
+      "measured_seconds_buggy": 0.26,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    },
+    {
+      "task_id": "quixbugs/quicksort",
+      "program": "python_programs/quicksort.py",
+      "reference_program": "correct_python_programs/quicksort.py",
+      "test_file": "python_testcases/test_quicksort.py",
+      "testcases_json": "json_testcases/quicksort.json",
+      "n_tests": 13,
+      "n_failing_on_buggy": 1,
+      "sha256_buggy": "4bc023d77dcdaeaaf5b284a03eecf0f73765ff216efecadd1d5ed78382ac89a3",
+      "sha256_reference": "2b9aa475d442ab534de2f1a5912de4ae3049282db3093f17f2bd88b6b356ba54",
+      "sha256_test": "256fd90b33d35a904b66332d23ce896d64f574c28faf1db24ac2d5de4d1cc2a3",
+      "measured_seconds_buggy": 0.26,
+      "license": "MIT-style text in repo LICENSE; see legal_notes.txt for Quixey provenance caveat"
+    }
+  ],
+  "scan": [
+    {
+      "task": "bitcount",
+      "eligible": false,
+      "buggy": {
+        "status": "timeout",
+        "seconds": 20.02
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 9,
+        "failed": 0,
+        "seconds": 0.28
+      },
+      "reason": "buggy={'status': 'timeout', 'seconds': 20.02} correct={'status': 'ok', 'tests': 9, 'failed': 0, 'seconds': 0.28}"
+    },
+    {
+      "task": "bucketsort",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 6,
+        "seconds": 0.35
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 0,
+        "seconds": 0.26
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "find_first_in_sorted",
+      "eligible": false,
+      "buggy": {
+        "status": "timeout",
+        "seconds": 20.02
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "buggy={'status': 'timeout', 'seconds': 20.02} correct={'status': 'ok', 'tests': 7, 'failed': 0, 'seconds': 0.25}"
+    },
+    {
+      "task": "find_in_sorted",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 2,
+        "seconds": 0.27
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 0,
+        "seconds": 0.26
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "flatten",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 6,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 0,
+        "seconds": 0.26
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "gcd",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 5,
+        "seconds": 0.28
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "get_factors",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 11,
+        "failed": 10,
+        "seconds": 0.27
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 11,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "hanoi",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 8,
+        "failed": 7,
+        "seconds": 0.27
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 8,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "is_valid_parenthesization",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 3,
+        "failed": 1,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 3,
+        "failed": 0,
+        "seconds": 0.27
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "kheapsort",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 4,
+        "failed": 3,
+        "seconds": 0.27
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 4,
+        "failed": 0,
+        "seconds": 0.26
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "knapsack",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 6,
+        "seconds": 0.28
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 0,
+        "seconds": 0.27
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "kth",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 4,
+        "seconds": 0.28
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "lcs_length",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 9,
+        "failed": 8,
+        "seconds": 0.27
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 9,
+        "failed": 0,
+        "seconds": 0.27
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "levenshtein",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 5,
+        "seconds": 1.39
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 0,
+        "seconds": 1.4
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "lis",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 12,
+        "failed": 4,
+        "seconds": 0.27
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 12,
+        "failed": 0,
+        "seconds": 0.29
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "longest_common_subsequence",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 4,
+        "seconds": 0.46
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 0,
+        "seconds": 0.34
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "max_sublist_sum",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 4,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "mergesort",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 14,
+        "failed": 13,
+        "seconds": 4.96
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 14,
+        "failed": 0,
+        "seconds": 0.27
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "next_palindrome",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 1,
+        "seconds": 0.25
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "next_permutation",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 8,
+        "failed": 8,
+        "seconds": 0.28
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 8,
+        "failed": 0,
+        "seconds": 0.33
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "pascal",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 4,
+        "seconds": 0.27
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 0,
+        "seconds": 0.29
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "possible_change",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 9,
+        "seconds": 0.46
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 0,
+        "seconds": 0.31
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "powerset",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 4,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 0,
+        "seconds": 0.24
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "quicksort",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 13,
+        "failed": 1,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 13,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "rpn_eval",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 3,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "shunting_yard",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 4,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "sieve",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 5,
+        "seconds": 0.26
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 6,
+        "failed": 0,
+        "seconds": 0.25
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "sqrt",
+      "eligible": false,
+      "buggy": {
+        "status": "timeout",
+        "seconds": 20.02
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 7,
+        "failed": 0,
+        "seconds": 0.27
+      },
+      "reason": "buggy={'status': 'timeout', 'seconds': 20.02} correct={'status': 'ok', 'tests': 7, 'failed': 0, 'seconds': 0.27}"
+    },
+    {
+      "task": "subsequences",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 12,
+        "failed": 10,
+        "seconds": 0.28
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 12,
+        "failed": 0,
+        "seconds": 0.26
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "to_base",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 7,
+        "seconds": 0.34
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 10,
+        "failed": 0,
+        "seconds": 0.28
+      },
+      "reason": "ok"
+    },
+    {
+      "task": "wrap",
+      "eligible": true,
+      "buggy": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 5,
+        "seconds": 0.28
+      },
+      "reference": {
+        "status": "ok",
+        "tests": 5,
+        "failed": 0,
+        "seconds": 0.27
+      },
+      "reason": "ok"
+    }
+  ]
+}

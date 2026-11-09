@@ -1,0 +1,9 @@
+{
+  "name": "arm2b_agent_initiated_tests",
+  "description": "OPTIONAL contrast: arm1 tools + an optional run_tests tool the model may call (or ignore). Same deterministic feedback text as arm2, but the AGENT decides when to test. Isolates 'forced deterministic feedback' from 'tests merely available'.",
+  "tools": ["read_file", "replace_in_file", "run_tests", "submit"],
+  "auto_test": false,
+  "graph": false,
+  "submit_gate": false,
+  "gate_max_rejections": 0
+}

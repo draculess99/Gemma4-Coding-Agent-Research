@@ -1,0 +1,38 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"tool\":\"submit\",\"args\": {\"tool_name\": \"read_file\", \"path\": \"flatten.py\"}}",
+        "reasoning_content": "The user wants to call the `read_file` tool with the argument `path='flatten.py'`.\nI need to generate a tool call JSON object."
+      }
+    }
+  ],
+  "created": 1794091562,
+  "model": "gemma-4-e2b-it-qat-q4_0",
+  "system_fingerprint": "b12192-9f0e5098a",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 64,
+    "prompt_tokens": 57,
+    "total_tokens": 121,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-ucJX1L5Dh8CpJNfzqgcqgoY2reZ29Lbo",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 57,
+    "prompt_ms": 380.41,
+    "prompt_per_token_ms": 6.673859649122807,
+    "prompt_per_second": 149.83833232564865,
+    "predicted_n": 64,
+    "predicted_ms": 3754.059,
+    "predicted_per_token_ms": 59.5882380952381,
+    "predicted_per_second": 16.78183534142644
+  },
+  "_elapsed_s": 4.16
+}

@@ -1,0 +1,20 @@
+{
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "max_new_tokens": 700,
+    "_note": "P2B 2026-11-07: temperature changed 0.7->1.0 to match the google/gemma-4-E2B-it-qat-q4_0-gguf model card (T=1.0, top_p=0.95, top_k=64). Original in runtime/p1_originals. Not yet frozen."
+  },
+  "budgets": {
+    "max_turns": 10,
+    "max_tool_calls": 14,
+    "max_format_errors": 3,
+    "max_wall_seconds": 900,
+    "max_output_chars": 3000,
+    "max_context_chars": 24000,
+    "test_timeout_s": 30
+  },
+  "model_context_tokens_expected": 8192,
+  "system_prompt": "prompts/system_base.md"
+}

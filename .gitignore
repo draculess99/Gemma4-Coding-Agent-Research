@@ -1,0 +1,60 @@
+# Scoped for the Gemma 4 Paper Track research publication (everything under paper/ that is approved).
+# Anything NOT listed in PUBLICATION_MANIFEST.md must not be committed. Prefer the explicit `git add`
+# allow-list in reports/GEMMA4_GITHUB_PUBLICATION_REVIEW.md over `git add -A`.
+
+# ---- Developer Agent competition work: separate from the Paper Track, NOT published in this repo ----
+/agent/
+/submission/
+/experiments/
+/reference/
+/reports/
+
+# ---- third-party clone (own .git, MIT licence) - users clone it themselves at the pinned commit ----
+/paper/experiments/p1_harness/_scratch/
+
+# ---- local-only research material, held back ----
+/paper/research/source_archive/
+/paper/media/cover/
+
+# ---- superseded P1 navigation READMEs (they state "no results exist"; stale after P2B/P2C) ----
+# The other P1 documents (feasibility, next steps, file manifest, outline) are published as dated historical
+# records; the root README.md says so. Replace these READMEs with the root README and paper/REPRODUCING.md.
+/paper/README.md
+/paper/experiments/p1_harness/README.md
+/paper/results/README.md
+/paper/scripts/README.md
+
+# ---- model weights, binaries, archives, credentials: never ----
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.onnx
+*.zip
+*.7z
+*.tar
+*.gz
+*.dll
+*.exe
+.env
+.env.*
+*.pem
+*.key
+kaggle.json
+secrets.*
+
+# ---- local environments, caches, editor and OS files ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak

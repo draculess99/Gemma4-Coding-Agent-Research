@@ -1,0 +1,21 @@
+0.05.557.790 I srv  llama_server: initializing ...
+0.05.557.802 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.05.558.050 I srv  init_listene: The UI is disabled
+0.05.558.056 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.05.558.204 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.05.570.184 I srv    load_model: loading model 'models/gemma-4-E2B_q4_0-it.gguf'
+0.06.476.479 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.06.476.559 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.06.544.758 W load: '</s>' is a normal token here, removing it from EOG list
+0.07.759.868 I cmn          init: llama threadpool init, n_threads = 6
+0.07.939.215 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.07.955.544 I srv  server_run_i: model loaded
+0.07.955.557 I srv  server_on_li: listening on http://127.0.0.1:8080
+2.26.779.621 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 0, t_last = -1
+2.26.779.670 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+2.30.914.208 I slot print_timing: id  0 | task 0 | prompt eval time =     380.41 ms /    57 tokens (    6.67 ms per token,   149.84 tokens per second)
+2.30.914.220 I slot print_timing: id  0 | task 0 |        eval time =    3754.06 ms /    64 tokens (   59.59 ms per token,    16.78 tokens per second)
+2.30.914.222 I slot print_timing: id  0 | task 0 |       total time =    4134.47 ms /   121 tokens
+2.30.914.224 I slot print_timing: id  0 | task 0 |    graphs reused =         63
+2.30.914.225 I slot print_timing: id  0 | task 0 |   graph reallocs =          0    /     0        (same size) / (changed size)
+2.30.914.275 I slot      release: id  0 | task 0 | stop processing: n_tokens = 120, truncated = 0

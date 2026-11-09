@@ -1,0 +1,9 @@
+{
+  "name": "arm3b_test_validated_nograph",
+  "description": "OPTIONAL ablation: arm2 + submit gate, NO graph. Separates gate effect from graph effect in arm3. Run only if time budget allows.",
+  "tools": ["read_file", "replace_in_file", "submit"],
+  "auto_test": true,
+  "graph": false,
+  "submit_gate": true,
+  "gate_max_rejections": 3
+}

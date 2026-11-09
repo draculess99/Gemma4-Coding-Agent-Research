@@ -1,0 +1,11 @@
+# Byte-exact storage for the frozen experiment package and its evidence.
+# The 19 files listed in paper/experiments/p1_harness/FREEZE.sha256 were hashed with Windows (CRLF) line endings.
+# Without this, core.autocrlf (set to true in this machine's system Git config) would store LF in the repository
+# and `python scripts/freeze.py --check FREEZE.sha256` would report CHANGED on a fresh clone on Linux/macOS.
+paper/experiments/p1_harness/** -text
+paper/results/** -text
+paper/runtime/** -text
+
+# Images are binary.
+*.png binary
+*.jpg binary

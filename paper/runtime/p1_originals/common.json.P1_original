@@ -1,0 +1,20 @@
+{
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "top_k": 64,
+    "max_new_tokens": 700,
+    "_note": "UNVERIFIED defaults. Check the Gemma 4 model card for recommended sampling before freezing; the protocol freezes whatever is chosen."
+  },
+  "budgets": {
+    "max_turns": 10,
+    "max_tool_calls": 14,
+    "max_format_errors": 3,
+    "max_wall_seconds": 900,
+    "max_output_chars": 3000,
+    "max_context_chars": 24000,
+    "test_timeout_s": 30
+  },
+  "model_context_tokens_expected": 8192,
+  "system_prompt": "prompts/system_base.md"
+}
