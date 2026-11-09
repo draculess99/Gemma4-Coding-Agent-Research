@@ -1,7 +1,7 @@
 # Publication manifest and exclusion list
 
-Prepared in phase G1 (publication audit) and reconciled with the final file bytes in phase G2 (see `paper/ERRATA.md` for the one added file).
-The file table below is generated from `git diff --cached --name-only` (the exact staged paths, which equal what the scoped `.gitignore` allows), with the SHA-256 of each file's current bytes. This manifest is not listed in its own table.
+Prepared in phase G1 (publication audit); published and reconciled with the final file bytes in phase G2.
+The file table below is generated from `git ls-files` (the files committed in this repository), with the SHA-256 of each file's current bytes. This manifest is not listed in its own table.
 
 **97 files, 2.2 MB in total** (excluding this manifest). Largest file: 572.4 KB.
 
@@ -170,7 +170,7 @@ The file table below is generated from `git diff --cached --name-only` (the exac
 Notes on this list:
 
 - The 19 files named in `paper/experiments/p1_harness/FREEZE.sha256` are published byte-for-byte (`.gitattributes` disables line-ending conversion for that tree). Their hashes in the table above equal the freeze list.
-- Four media scripts have CRLF line endings on disk; Git will normalise them to LF on commit (`core.autocrlf=true`). They are source code, not hashed evidence.
+- **Hash basis.** Each SHA-256 is of the file bytes as written in the authoring checkout. The byte-exact trees (`paper/experiments/p1_harness/**`, `paper/results/**`, `paper/runtime/**`) are stored unchanged (`.gitattributes` `-text`) and match on every platform. Ordinary text files (Markdown, Python, config) are stored with LF endings: a Linux/macOS clone matches the table exactly, while a Windows clone with `core.autocrlf=true` checks them out with CRLF and matches after converting CRLF to LF. Verified on a fresh Windows clone of commit 475fff8: 75 files identical, 22 identical after CRLF-to-LF conversion, 0 real mismatches.
 - P1 documents (`FEASIBILITY_REPORT.md`, `NEXT_STEPS_LIMITED_INFERENCE.md`, `FILE_MANIFEST.md`, `PAPER_OUTLINE.md`) are historical, written before any result existed, and contain statements such as "no real-model results exist". They are published as dated records; the root `README.md` says so.
 - `paper/drafts/GEMMA4_PAPER_DRAFT_V1.md` is a working draft with `[AUTHOR]` placeholders.
 
